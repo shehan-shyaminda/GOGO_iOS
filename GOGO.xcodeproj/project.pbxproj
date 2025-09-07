@@ -3,17 +3,60 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		AD2070542CD14ECA000659C7 /* GOGOApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2070532CD14ECA000659C7 /* GOGOApp.swift */; };
-		AD2070562CD14ECA000659C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2070552CD14ECA000659C7 /* ContentView.swift */; };
 		AD2070582CD14ECC000659C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD2070572CD14ECC000659C7 /* Assets.xcassets */; };
 		AD20705C2CD14ECC000659C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD20705B2CD14ECC000659C7 /* Preview Assets.xcassets */; };
 		AD2070662CD14ECC000659C7 /* GOGOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2070652CD14ECC000659C7 /* GOGOTests.swift */; };
 		AD2070702CD14ECC000659C7 /* GOGOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD20706F2CD14ECC000659C7 /* GOGOUITests.swift */; };
 		AD2070722CD14ECC000659C7 /* GOGOUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2070712CD14ECC000659C7 /* GOGOUITestsLaunchTests.swift */; };
+		AD20BA3D2CDD320600494ADE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD20BA3C2CDD31FA00494ADE /* LoginView.swift */; };
+		AD20BA3F2CDD326A00494ADE /* PassengerHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD20BA3E2CDD324C00494ADE /* PassengerHomeView.swift */; };
+		AD20BA452CDD337E00494ADE /* DriverHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD20BA442CDD337E00494ADE /* DriverHomeView.swift */; };
+		AD35E4452E52F4DF009CC729 /* NetworkUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD35E4442E52F4DF009CC729 /* NetworkUtils.swift */; };
+		AD35E44A2E5307EE009CC729 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AD35E4492E5307EE009CC729 /* IQKeyboardManagerSwift */; };
+		AD35E44D2E54268C009CC729 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD35E44C2E54268C009CC729 /* LoadingView.swift */; };
+		AD35E4522E5771EB009CC729 /* RouteMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD35E4512E5771EB009CC729 /* RouteMapView.swift */; };
+		AD35E4542E578A18009CC729 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD35E4532E578A18009CC729 /* Extentions.swift */; };
+		AD35E4582E60D892009CC729 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD35E4572E60D892009CC729 /* GoogleService-Info.plist */; };
+		AD35E4652E644F95009CC729 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = AD35E4642E644F95009CC729 /* FirebaseDatabase */; };
+		AD35E4672E644F95009CC729 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = AD35E4662E644F95009CC729 /* FirebaseFirestore */; };
+		AD35E4692E644F95009CC729 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = AD35E4682E644F95009CC729 /* FirebaseMessaging */; };
+		AD35E46B2E644F95009CC729 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = AD35E46A2E644F95009CC729 /* FirebaseStorage */; };
+		AD3BB1492E675E8B007EECBE /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = AD3BB1482E675E8B007EECBE /* Kingfisher */; };
+		AD3DC0292E6A02A9005B8250 /* DriverAddCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3DC0282E6A02A9005B8250 /* DriverAddCardView.swift */; };
+		AD3DC02B2E6A0A4B005B8250 /* AddVehicleDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3DC02A2E6A0A4B005B8250 /* AddVehicleDetailsView.swift */; };
+		AD3DC02D2E6A9DBA005B8250 /* BiometricAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3DC02C2E6A9DBA005B8250 /* BiometricAuth.swift */; };
+		AD3DC02F2E6A9E28005B8250 /* LockGateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3DC02E2E6A9E28005B8250 /* LockGateView.swift */; };
+		AD3DC0332E6AA22C005B8250 /* AuthenticationSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3DC0322E6AA22C005B8250 /* AuthenticationSettingsView.swift */; };
+		AD3DC0652E6ABDCB005B8250 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3DC03A2E6AAAAB005B8250 /* WidgetKit.framework */; };
+		AD3DC0662E6ABDCB005B8250 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3DC03C2E6AAAAC005B8250 /* SwiftUI.framework */; };
+		AD3DC0712E6ABDCD005B8250 /* GoGoWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = AD3DC0642E6ABDCB005B8250 /* GoGoWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AD8127BD2CDFC9A7002C4466 /* DriverMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8127BC2CDFC9A7002C4466 /* DriverMapView.swift */; };
+		AD8127C12CDFCF1D002C4466 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8127C02CDFCF15002C4466 /* RoundedCorner.swift */; };
+		AD8127C32CE1111A002C4466 /* DriverSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8127C22CE1111A002C4466 /* DriverSettingsView.swift */; };
+		AD8127C52CE114D0002C4466 /* DriverInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8127C42CE114D0002C4466 /* DriverInfoView.swift */; };
+		AD8127C72CE115AE002C4466 /* VehicleInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8127C62CE115AE002C4466 /* VehicleInfoView.swift */; };
+		AD8127C92CE115F7002C4466 /* DriverLicenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8127C82CE115F7002C4466 /* DriverLicenseView.swift */; };
+		AD8127CB2CE11829002C4466 /* DriverBankDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8127CA2CE11829002C4466 /* DriverBankDetailsView.swift */; };
+		AD8127CD2CE11ABA002C4466 /* RevenueLicenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8127CC2CE11ABA002C4466 /* RevenueLicenseView.swift */; };
+		AD8127CF2CE11BA2002C4466 /* VehicleDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8127CE2CE11BA2002C4466 /* VehicleDetailsView.swift */; };
+		ADF0DE462CE518D700B96E66 /* SelectLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF0DE452CE518D700B96E66 /* SelectLocationView.swift */; };
+		ADF0DE482CE525E100B96E66 /* PassengerMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF0DE472CE525E100B96E66 /* PassengerMapView.swift */; };
+		ADF0DE4A2CE530A100B96E66 /* PassengerSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF0DE492CE530A100B96E66 /* PassengerSettingsView.swift */; };
+		ADF0DE4C2CE5313800B96E66 /* PassengerBankDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF0DE4B2CE5313800B96E66 /* PassengerBankDetailsView.swift */; };
+		ADF0DE4E2CE533AA00B96E66 /* AddCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF0DE4D2CE533AA00B96E66 /* AddCardView.swift */; };
+		ADF0DE522CE5355C00B96E66 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF0DE512CE5355C00B96E66 /* UserDefaultsManager.swift */; };
+		ADF0DE552CE90B5100B96E66 /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = ADF0DE542CE90B5100B96E66 /* FirebaseAppDistribution-Beta */; };
+		ADF0DE572CE90B5100B96E66 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = ADF0DE562CE90B5100B96E66 /* FirebaseAuth */; };
+		ADF0DE592CE90B5100B96E66 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = ADF0DE582CE90B5100B96E66 /* FirebaseDatabase */; };
+		ADF0DE5B2CE90B5100B96E66 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = ADF0DE5A2CE90B5100B96E66 /* FirebaseFirestore */; };
+		ADF0DE5D2CE90B5100B96E66 /* FirebaseInAppMessaging-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = ADF0DE5C2CE90B5100B96E66 /* FirebaseInAppMessaging-Beta */; };
+		ADF0DE5F2CE90B5100B96E66 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = ADF0DE5E2CE90B5100B96E66 /* FirebaseMessaging */; };
+		ADF0DE612CE90B5100B96E66 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = ADF0DE602CE90B5100B96E66 /* FirebaseStorage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,12 +74,32 @@
 			remoteGlobalIDString = AD20704F2CD14ECA000659C7;
 			remoteInfo = GOGO;
 		};
+		AD3DC06F2E6ABDCD005B8250 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD2070482CD14ECA000659C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD3DC0632E6ABDCB005B8250;
+			remoteInfo = GoGoWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AD3DC0532E6AAAAE005B8250 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AD3DC0712E6ABDCD005B8250 /* GoGoWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AD2070502CD14ECA000659C7 /* GOGO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GOGO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD2070532CD14ECA000659C7 /* GOGOApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOGOApp.swift; sourceTree = "<group>"; };
-		AD2070552CD14ECA000659C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AD2070572CD14ECC000659C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD2070592CD14ECC000659C7 /* GOGO.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GOGO.entitlements; sourceTree = "<group>"; };
 		AD20705B2CD14ECC000659C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,13 +108,74 @@
 		AD20706B2CD14ECC000659C7 /* GOGOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GOGOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD20706F2CD14ECC000659C7 /* GOGOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOGOUITests.swift; sourceTree = "<group>"; };
 		AD2070712CD14ECC000659C7 /* GOGOUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOGOUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AD20BA3C2CDD31FA00494ADE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		AD20BA3E2CDD324C00494ADE /* PassengerHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerHomeView.swift; sourceTree = "<group>"; };
+		AD20BA442CDD337E00494ADE /* DriverHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverHomeView.swift; sourceTree = "<group>"; };
+		AD35E4442E52F4DF009CC729 /* NetworkUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtils.swift; sourceTree = "<group>"; };
+		AD35E44C2E54268C009CC729 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		AD35E4512E5771EB009CC729 /* RouteMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteMapView.swift; sourceTree = "<group>"; };
+		AD35E4532E578A18009CC729 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		AD35E4572E60D892009CC729 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AD35E4592E6157AE009CC729 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		AD3DC0282E6A02A9005B8250 /* DriverAddCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverAddCardView.swift; sourceTree = "<group>"; };
+		AD3DC02A2E6A0A4B005B8250 /* AddVehicleDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVehicleDetailsView.swift; sourceTree = "<group>"; };
+		AD3DC02C2E6A9DBA005B8250 /* BiometricAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricAuth.swift; sourceTree = "<group>"; };
+		AD3DC02E2E6A9E28005B8250 /* LockGateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockGateView.swift; sourceTree = "<group>"; };
+		AD3DC0322E6AA22C005B8250 /* AuthenticationSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationSettingsView.swift; sourceTree = "<group>"; };
+		AD3DC03A2E6AAAAB005B8250 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		AD3DC03C2E6AAAAC005B8250 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		AD3DC0642E6ABDCB005B8250 /* GoGoWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GoGoWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD8127BC2CDFC9A7002C4466 /* DriverMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverMapView.swift; sourceTree = "<group>"; };
+		AD8127C02CDFCF15002C4466 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
+		AD8127C22CE1111A002C4466 /* DriverSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverSettingsView.swift; sourceTree = "<group>"; };
+		AD8127C42CE114D0002C4466 /* DriverInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverInfoView.swift; sourceTree = "<group>"; };
+		AD8127C62CE115AE002C4466 /* VehicleInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleInfoView.swift; sourceTree = "<group>"; };
+		AD8127C82CE115F7002C4466 /* DriverLicenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverLicenseView.swift; sourceTree = "<group>"; };
+		AD8127CA2CE11829002C4466 /* DriverBankDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverBankDetailsView.swift; sourceTree = "<group>"; };
+		AD8127CC2CE11ABA002C4466 /* RevenueLicenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevenueLicenseView.swift; sourceTree = "<group>"; };
+		AD8127CE2CE11BA2002C4466 /* VehicleDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDetailsView.swift; sourceTree = "<group>"; };
+		ADF0DE452CE518D700B96E66 /* SelectLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLocationView.swift; sourceTree = "<group>"; };
+		ADF0DE472CE525E100B96E66 /* PassengerMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerMapView.swift; sourceTree = "<group>"; };
+		ADF0DE492CE530A100B96E66 /* PassengerSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerSettingsView.swift; sourceTree = "<group>"; };
+		ADF0DE4B2CE5313800B96E66 /* PassengerBankDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerBankDetailsView.swift; sourceTree = "<group>"; };
+		ADF0DE4D2CE533AA00B96E66 /* AddCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardView.swift; sourceTree = "<group>"; };
+		ADF0DE512CE5355C00B96E66 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		AD3DC0722E6ABDCD005B8250 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = AD3DC0632E6ABDCB005B8250 /* GoGoWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		AD35E44E2E5731B8009CC729 /* ViewModel */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ViewModel; sourceTree = "<group>"; };
+		AD35E45E2E63578A009CC729 /* Model */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Model; sourceTree = "<group>"; };
+		AD3DC0672E6ABDCB005B8250 /* GoGoWidget */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (AD3DC0722E6ABDCD005B8250 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = GoGoWidget; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AD20704D2CD14ECA000659C7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADF0DE5F2CE90B5100B96E66 /* FirebaseMessaging in Frameworks */,
+				AD35E44A2E5307EE009CC729 /* IQKeyboardManagerSwift in Frameworks */,
+				ADF0DE592CE90B5100B96E66 /* FirebaseDatabase in Frameworks */,
+				AD35E4672E644F95009CC729 /* FirebaseFirestore in Frameworks */,
+				ADF0DE5B2CE90B5100B96E66 /* FirebaseFirestore in Frameworks */,
+				AD35E46B2E644F95009CC729 /* FirebaseStorage in Frameworks */,
+				ADF0DE552CE90B5100B96E66 /* FirebaseAppDistribution-Beta in Frameworks */,
+				ADF0DE612CE90B5100B96E66 /* FirebaseStorage in Frameworks */,
+				AD3BB1492E675E8B007EECBE /* Kingfisher in Frameworks */,
+				AD35E4652E644F95009CC729 /* FirebaseDatabase in Frameworks */,
+				ADF0DE572CE90B5100B96E66 /* FirebaseAuth in Frameworks */,
+				AD35E4692E644F95009CC729 /* FirebaseMessaging in Frameworks */,
+				ADF0DE5D2CE90B5100B96E66 /* FirebaseInAppMessaging-Beta in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +193,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AD3DC0612E6ABDCB005B8250 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD3DC0662E6ABDCB005B8250 /* SwiftUI.framework in Frameworks */,
+				AD3DC0652E6ABDCB005B8250 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +211,8 @@
 				AD2070522CD14ECA000659C7 /* GOGO */,
 				AD2070642CD14ECC000659C7 /* GOGOTests */,
 				AD20706E2CD14ECC000659C7 /* GOGOUITests */,
+				AD3DC0672E6ABDCB005B8250 /* GoGoWidget */,
+				AD3DC0392E6AAAAB005B8250 /* Frameworks */,
 				AD2070512CD14ECA000659C7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +223,7 @@
 				AD2070502CD14ECA000659C7 /* GOGO.app */,
 				AD2070612CD14ECC000659C7 /* GOGOTests.xctest */,
 				AD20706B2CD14ECC000659C7 /* GOGOUITests.xctest */,
+				AD3DC0642E6ABDCB005B8250 /* GoGoWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,11 +231,16 @@
 		AD2070522CD14ECA000659C7 /* GOGO */ = {
 			isa = PBXGroup;
 			children = (
+				AD35E4592E6157AE009CC729 /* Info.plist */,
+				AD35E45E2E63578A009CC729 /* Model */,
+				AD35E44E2E5731B8009CC729 /* ViewModel */,
+				ADF0DE4F2CE534E700B96E66 /* View */,
+				ADF0DE502CE5350400B96E66 /* Utiil */,
 				AD2070532CD14ECA000659C7 /* GOGOApp.swift */,
-				AD2070552CD14ECA000659C7 /* ContentView.swift */,
 				AD2070572CD14ECC000659C7 /* Assets.xcassets */,
 				AD2070592CD14ECC000659C7 /* GOGO.entitlements */,
 				AD20705A2CD14ECC000659C7 /* Preview Content */,
+				AD35E4572E60D892009CC729 /* GoogleService-Info.plist */,
 			);
 			path = GOGO;
 			sourceTree = "<group>";
@@ -129,6 +270,56 @@
 			path = GOGOUITests;
 			sourceTree = "<group>";
 		};
+		AD3DC0392E6AAAAB005B8250 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD3DC03A2E6AAAAB005B8250 /* WidgetKit.framework */,
+				AD3DC03C2E6AAAAC005B8250 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ADF0DE4F2CE534E700B96E66 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD20BA3C2CDD31FA00494ADE /* LoginView.swift */,
+				AD20BA3E2CDD324C00494ADE /* PassengerHomeView.swift */,
+				AD20BA442CDD337E00494ADE /* DriverHomeView.swift */,
+				AD8127BC2CDFC9A7002C4466 /* DriverMapView.swift */,
+				AD8127C22CE1111A002C4466 /* DriverSettingsView.swift */,
+				AD8127C42CE114D0002C4466 /* DriverInfoView.swift */,
+				AD8127C62CE115AE002C4466 /* VehicleInfoView.swift */,
+				AD8127C82CE115F7002C4466 /* DriverLicenseView.swift */,
+				AD8127CA2CE11829002C4466 /* DriverBankDetailsView.swift */,
+				AD8127CC2CE11ABA002C4466 /* RevenueLicenseView.swift */,
+				AD8127CE2CE11BA2002C4466 /* VehicleDetailsView.swift */,
+				ADF0DE452CE518D700B96E66 /* SelectLocationView.swift */,
+				ADF0DE472CE525E100B96E66 /* PassengerMapView.swift */,
+				ADF0DE492CE530A100B96E66 /* PassengerSettingsView.swift */,
+				ADF0DE4B2CE5313800B96E66 /* PassengerBankDetailsView.swift */,
+				ADF0DE4D2CE533AA00B96E66 /* AddCardView.swift */,
+				AD35E4512E5771EB009CC729 /* RouteMapView.swift */,
+				AD3DC0282E6A02A9005B8250 /* DriverAddCardView.swift */,
+				AD3DC02A2E6A0A4B005B8250 /* AddVehicleDetailsView.swift */,
+				AD3DC02E2E6A9E28005B8250 /* LockGateView.swift */,
+				AD3DC0322E6AA22C005B8250 /* AuthenticationSettingsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ADF0DE502CE5350400B96E66 /* Utiil */ = {
+			isa = PBXGroup;
+			children = (
+				AD35E4442E52F4DF009CC729 /* NetworkUtils.swift */,
+				AD8127C02CDFCF15002C4466 /* RoundedCorner.swift */,
+				ADF0DE512CE5355C00B96E66 /* UserDefaultsManager.swift */,
+				AD35E44C2E54268C009CC729 /* LoadingView.swift */,
+				AD35E4532E578A18009CC729 /* Extentions.swift */,
+				AD3DC02C2E6A9DBA005B8250 /* BiometricAuth.swift */,
+			);
+			path = Utiil;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,10 +330,16 @@
 				AD20704C2CD14ECA000659C7 /* Sources */,
 				AD20704D2CD14ECA000659C7 /* Frameworks */,
 				AD20704E2CD14ECA000659C7 /* Resources */,
+				AD3DC0532E6AAAAE005B8250 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AD3DC0702E6ABDCD005B8250 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				AD35E44E2E5731B8009CC729 /* ViewModel */,
+				AD35E45E2E63578A009CC729 /* Model */,
 			);
 			name = GOGO;
 			productName = GOGO;
@@ -185,6 +382,28 @@
 			productReference = AD20706B2CD14ECC000659C7 /* GOGOUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		AD3DC0632E6ABDCB005B8250 /* GoGoWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD3DC0732E6ABDCD005B8250 /* Build configuration list for PBXNativeTarget "GoGoWidgetExtension" */;
+			buildPhases = (
+				AD3DC0602E6ABDCB005B8250 /* Sources */,
+				AD3DC0612E6ABDCB005B8250 /* Frameworks */,
+				AD3DC0622E6ABDCB005B8250 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				AD3DC0672E6ABDCB005B8250 /* GoGoWidget */,
+			);
+			name = GoGoWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = GoGoWidgetExtension;
+			productReference = AD3DC0642E6ABDCB005B8250 /* GoGoWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -192,8 +411,8 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1530;
-				LastUpgradeCheck = 1530;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
 				TargetAttributes = {
 					AD20704F2CD14ECA000659C7 = {
 						CreatedOnToolsVersion = 15.3;
@@ -206,6 +425,9 @@
 						CreatedOnToolsVersion = 15.3;
 						TestTargetID = AD20704F2CD14ECA000659C7;
 					};
+					AD3DC0632E6ABDCB005B8250 = {
+						CreatedOnToolsVersion = 16.4;
+					};
 				};
 			};
 			buildConfigurationList = AD20704B2CD14ECA000659C7 /* Build configuration list for PBXProject "GOGO" */;
@@ -217,6 +439,11 @@
 				Base,
 			);
 			mainGroup = AD2070472CD14ECA000659C7;
+			packageReferences = (
+				AD35E4482E5307EE009CC729 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				AD35E4632E644F94009CC729 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				AD3BB1472E675E8B007EECBE /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = AD2070512CD14ECA000659C7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -224,6 +451,7 @@
 				AD20704F2CD14ECA000659C7 /* GOGO */,
 				AD2070602CD14ECC000659C7 /* GOGOTests */,
 				AD20706A2CD14ECC000659C7 /* GOGOUITests */,
+				AD3DC0632E6ABDCB005B8250 /* GoGoWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -235,6 +463,7 @@
 			files = (
 				AD20705C2CD14ECC000659C7 /* Preview Assets.xcassets in Resources */,
 				AD2070582CD14ECC000659C7 /* Assets.xcassets in Resources */,
+				AD35E4582E60D892009CC729 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +481,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AD3DC0622E6ABDCB005B8250 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -259,8 +495,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD2070562CD14ECA000659C7 /* ContentView.swift in Sources */,
+				ADF0DE4A2CE530A100B96E66 /* PassengerSettingsView.swift in Sources */,
+				AD20BA3F2CDD326A00494ADE /* PassengerHomeView.swift in Sources */,
+				AD8127C32CE1111A002C4466 /* DriverSettingsView.swift in Sources */,
+				ADF0DE462CE518D700B96E66 /* SelectLocationView.swift in Sources */,
+				AD3DC0292E6A02A9005B8250 /* DriverAddCardView.swift in Sources */,
+				AD8127CF2CE11BA2002C4466 /* VehicleDetailsView.swift in Sources */,
+				AD35E44D2E54268C009CC729 /* LoadingView.swift in Sources */,
+				AD8127C12CDFCF1D002C4466 /* RoundedCorner.swift in Sources */,
+				AD3DC0332E6AA22C005B8250 /* AuthenticationSettingsView.swift in Sources */,
+				AD35E4522E5771EB009CC729 /* RouteMapView.swift in Sources */,
+				AD35E4452E52F4DF009CC729 /* NetworkUtils.swift in Sources */,
+				ADF0DE522CE5355C00B96E66 /* UserDefaultsManager.swift in Sources */,
+				AD20BA3D2CDD320600494ADE /* LoginView.swift in Sources */,
+				AD8127C72CE115AE002C4466 /* VehicleInfoView.swift in Sources */,
+				AD8127BD2CDFC9A7002C4466 /* DriverMapView.swift in Sources */,
+				AD8127C52CE114D0002C4466 /* DriverInfoView.swift in Sources */,
+				AD3DC02F2E6A9E28005B8250 /* LockGateView.swift in Sources */,
+				AD8127C92CE115F7002C4466 /* DriverLicenseView.swift in Sources */,
+				ADF0DE4C2CE5313800B96E66 /* PassengerBankDetailsView.swift in Sources */,
+				AD8127CD2CE11ABA002C4466 /* RevenueLicenseView.swift in Sources */,
+				AD8127CB2CE11829002C4466 /* DriverBankDetailsView.swift in Sources */,
 				AD2070542CD14ECA000659C7 /* GOGOApp.swift in Sources */,
+				ADF0DE482CE525E100B96E66 /* PassengerMapView.swift in Sources */,
+				AD3DC02B2E6A0A4B005B8250 /* AddVehicleDetailsView.swift in Sources */,
+				AD20BA452CDD337E00494ADE /* DriverHomeView.swift in Sources */,
+				ADF0DE4E2CE533AA00B96E66 /* AddCardView.swift in Sources */,
+				AD35E4542E578A18009CC729 /* Extentions.swift in Sources */,
+				AD3DC02D2E6A9DBA005B8250 /* BiometricAuth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +543,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AD3DC0602E6ABDCB005B8250 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -293,6 +562,11 @@
 			isa = PBXTargetDependency;
 			target = AD20704F2CD14ECA000659C7 /* GOGO */;
 			targetProxy = AD20706C2CD14ECC000659C7 /* PBXContainerItemProxy */;
+		};
+		AD3DC0702E6ABDCD005B8250 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD3DC0632E6ABDCB005B8250 /* GoGoWidgetExtension */;
+			targetProxy = AD3DC06F2E6ABDCD005B8250 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -331,7 +605,9 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 85K4CZ8V3Y;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -392,7 +668,9 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 85K4CZ8V3Y;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -419,11 +697,15 @@
 				CODE_SIGN_ENTITLEMENTS = GOGO/GOGO.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"GOGO/Preview Content\"";
-				DEVELOPMENT_TEAM = 85K4CZ8V3Y;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GOGO/Info.plist;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "This app needs access to your calendar to save trips.";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We use Face ID to quickly and securely unlock your account.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allow GOGO to access your location to provide directions and nearby places on the map.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -434,7 +716,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
@@ -442,10 +724,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.appz.GOGO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -457,11 +740,15 @@
 				CODE_SIGN_ENTITLEMENTS = GOGO/GOGO.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"GOGO/Preview Content\"";
-				DEVELOPMENT_TEAM = 85K4CZ8V3Y;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GOGO/Info.plist;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "This app needs access to your calendar to save trips.";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We use Face ID to quickly and securely unlock your account.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allow GOGO to access your location to provide directions and nearby places on the map.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -472,7 +759,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
@@ -480,21 +767,21 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.appz.GOGO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		AD2070792CD14ECC000659C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 85K4CZ8V3Y;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
@@ -513,11 +800,10 @@
 		AD20707A2CD14ECC000659C7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 85K4CZ8V3Y;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
@@ -536,10 +822,9 @@
 		AD20707C2CD14ECC000659C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 85K4CZ8V3Y;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
@@ -558,10 +843,9 @@
 		AD20707D2CD14ECC000659C7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 85K4CZ8V3Y;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
@@ -574,6 +858,71 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = GOGO;
+			};
+			name = Release;
+		};
+		AD3DC0742E6ABDCD005B8250 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GoGoWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GoGoWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appz.GOGO.GoGoWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		AD3DC0752E6ABDCD005B8250 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GoGoWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GoGoWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appz.GOGO.GoGoWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -616,7 +965,119 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		AD3DC0732E6ABDCD005B8250 /* Build configuration list for PBXNativeTarget "GoGoWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD3DC0742E6ABDCD005B8250 /* Debug */,
+				AD3DC0752E6ABDCD005B8250 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AD35E4482E5307EE009CC729 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.1;
+			};
+		};
+		AD35E4632E644F94009CC729 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.2.0;
+			};
+		};
+		AD3BB1472E675E8B007EECBE /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.5.0;
+			};
+		};
+		ADF0DE532CE90B5100B96E66 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AD35E4492E5307EE009CC729 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD35E4482E5307EE009CC729 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		AD35E4642E644F95009CC729 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD35E4632E644F94009CC729 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		AD35E4662E644F95009CC729 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD35E4632E644F94009CC729 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		AD35E4682E644F95009CC729 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD35E4632E644F94009CC729 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		AD35E46A2E644F95009CC729 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD35E4632E644F94009CC729 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		AD3BB1482E675E8B007EECBE /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD3BB1472E675E8B007EECBE /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		ADF0DE542CE90B5100B96E66 /* FirebaseAppDistribution-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ADF0DE532CE90B5100B96E66 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAppDistribution-Beta";
+		};
+		ADF0DE562CE90B5100B96E66 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ADF0DE532CE90B5100B96E66 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		ADF0DE582CE90B5100B96E66 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ADF0DE532CE90B5100B96E66 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		ADF0DE5A2CE90B5100B96E66 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ADF0DE532CE90B5100B96E66 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		ADF0DE5C2CE90B5100B96E66 /* FirebaseInAppMessaging-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ADF0DE532CE90B5100B96E66 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessaging-Beta";
+		};
+		ADF0DE5E2CE90B5100B96E66 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ADF0DE532CE90B5100B96E66 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		ADF0DE602CE90B5100B96E66 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ADF0DE532CE90B5100B96E66 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AD2070482CD14ECA000659C7 /* Project object */;
 }
