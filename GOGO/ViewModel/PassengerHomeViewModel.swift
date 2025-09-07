@@ -61,7 +61,10 @@ class PassengerHomeViewModel: NSObject, ObservableObject, MKLocalSearchCompleter
     }
     
     func fetchGoogleDistance() {
-        let apiKey = "AIzaSyCOwj4h7W_fC7IJz6GB545PmVpUcIDhLcw"
+        guard let apiKey = Bundle.main.object(forInfoDictionaryKey: "GMSApiKey") as? String else {
+            return
+        }
+        
         let urlStr = "https://maps.googleapis.com/maps/api/distancematrix/json?origins=\(pickUpLocation!.coordinate.latitude),\(pickUpLocation!.coordinate.longitude)&destinations=\(dropLocation!.coordinate.latitude),\(dropLocation!.coordinate.longitude)&mode=driving&key=\(apiKey)"
         
         guard let url = URL(string: urlStr) else { return }

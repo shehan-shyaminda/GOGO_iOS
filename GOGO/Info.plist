@@ -4,6 +4,8 @@
 <dict>
 	<key>FirebaseAppDelegateProxyEnabled</key>
 	<false/>
+	<key>GMSApiKey</key>
+	<string>AIzaSyCOwj4h7W_fC7IJz6GB545PmVpUcIDhLcw</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>comgooglemaps</string>

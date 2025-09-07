@@ -59,7 +59,6 @@ struct AddVehicleDetailsView: View {
                     .background(Color.gray.opacity(0.1))
                     .clipShape(RoundedRectangle(cornerRadius: 10))
                 TextField("Vehicle Model", text: $driverInfoVM.model)
-                    .keyboardType(.numberPad)
                     .padding()
                     .overlay(
                         RoundedRectangle(cornerRadius: 10)
@@ -68,6 +67,7 @@ struct AddVehicleDetailsView: View {
                     .background(Color.gray.opacity(0.1))
                     .clipShape(RoundedRectangle(cornerRadius: 10))
                 TextField("Year of Manufacturer", text: $driverInfoVM.yom)
+                    .keyboardType(.numberPad)
                     .padding()
                     .overlay(
                         RoundedRectangle(cornerRadius: 10)
@@ -111,7 +111,7 @@ struct AddVehicleDetailsView: View {
                                               vehicleRegNum: driverInfoVM.regNum,
                                               vehicleYear: driverInfoVM.yom,
                                               vehicleSeats: driverInfoVM.seatCount,
-                                              vehicleEngine: driverInfoVM.enginePower)
+                                              vehicleEngine: "\(driverInfoVM.enginePower) cc")
                     self.driverInfoVM.updateVehicle(vehicle: vehicle.toDict(), completion: { it in
                         self.isSuccess = it
                     })
