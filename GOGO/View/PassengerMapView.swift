@@ -177,6 +177,30 @@ struct PassengerMapView: View {
                         )
                         VStack {
                             Spacer()
+                            if let status = passengerMapVM.tripModel?.tripStatus,
+                               status != 0 && status != 1 && status != 2 {
+                                HStack {
+                                    Spacer()
+                                    Button(action: {
+                                        let sms = "sms:\(+94777123456))&body=\(passengerMapVM.getEmergencyMessage())"
+                                        if let urlString = sms.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed),
+                                           let url = URL(string: urlString) {
+                                            if UIApplication.shared.canOpenURL(url) {
+                                                UIApplication.shared.open(url)
+                                            }
+                                        }
+                                    }, label: {
+                                        HStack(content: {
+                                            Image(systemName: "figure.wave.circle.fill")
+                                                .font(.system(size: 40))
+                                                .foregroundColor(.white)
+                                                .padding(1)
+                                                .background(Color.black.opacity(0.7))
+                                                .clipShape(Circle())
+                                        })
+                                    })
+                                }
+                            }
                             HStack {
                                 Spacer()
                                 Button(action: {
@@ -191,9 +215,9 @@ struct PassengerMapView: View {
                                             .clipShape(Circle())
                                     })
                                 })
-                                .padding()
                             }
                         }
+                        .padding()
                     }
                 } else {
                     Text("Loading trip...")

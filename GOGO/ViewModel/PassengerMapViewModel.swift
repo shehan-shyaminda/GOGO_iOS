@@ -61,6 +61,10 @@ class PassengerMapViewModel: NSObject, ObservableObject {
         }
     }
     
+    func getEmergencyMessage() -> String {
+        return "🚨 Emergency Alert: Passenger \(tripModel!.passengerId) in trip with Driver \(tripModel!.driverId). Pickup: \(tripModel!.pickDescription). Drop: \(tripModel!.dropDescription). Please take immediate action."
+    }
+    
     func getTripUpdate() -> [String: Any] {
         if (self.tripModel?.tripStatus == 4) {
             return ["tripStatus": 5]
